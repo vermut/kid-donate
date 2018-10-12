@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list',
-  templateUrl: 'list.page.html',
-  styleUrls: ['list.page.scss']
+  templateUrl: 'recurring.page.html',
+  styleUrls: ['recurring.page.scss']
 })
-export class ListPage implements OnInit {
+export class RecurringPage implements OnInit {
   private selectedItem: any;
   private icons = [
     'flask',

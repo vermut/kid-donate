@@ -4,16 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'onetime',
     pathMatch: 'full'
   },
   {
-    path: 'home',
+    path: 'onetime',
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: 'recurring',
+    loadChildren: './recurring/recurring.module#RecurringPageModule'
   }
 ];
 
