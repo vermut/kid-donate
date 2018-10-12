@@ -9,7 +9,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content offset-3>
     <img src="../../assets/cat.jpg"/>
     <pre>
     All right, pussy, pussy, pussy! Come on in pussy lovers!
@@ -26,19 +26,20 @@
     in, pussy lovers!</pre>
 
     <hr>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form id="paypal2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <INPUT TYPE="hidden" name="charset" value="utf-8">
         <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="AF85E59Z3QPWU">
+        <input type="hidden" name="hosted_button_id" value="VP7NHE7DG8V34">
         <table>
             <tr>
                 <td><input type="hidden" name="on0" value="Размер вашей благодарности">Размер вашей благодарности</td>
             </tr>
             <tr>
                 <td><select name="os0">
-                    <option value="Спруж">Спруж : €15.00 EUR - monthly</option>
-                    <option value="Лелик">Лелик : €40.00 EUR - monthly</option>
-                    <option value="Локенбах">Локенбах : €60.00 EUR - monthly</option>
-                    <option value="Пилдегович">Пилдегович : €200.00 EUR - monthly</option>
+                    <option value="M15">€15.00 EUR - monthly</option>
+                    <option value="M45">€45.00 EUR - monthly</option>
+                    <option value="M60">€60.00 EUR - monthly</option>
+                    <option value="M200">€200.00 EUR - monthly</option>
                 </select></td>
             </tr>
             <tr>
@@ -50,7 +51,7 @@
         </table>
         <input type="hidden" name="currency_code" value="EUR">
         <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_subscribeCC_LG.gif" border="0"
-               name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+               name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!"
+               onclick="document.getElementById('paypal2').submit();">
     </form>
 </ion-content>
