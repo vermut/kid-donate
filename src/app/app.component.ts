@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import {Platform} from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +17,12 @@ export class AppComponent {
       title: 'Регулярные пожертвования',
       url: '/recurring',
       icon: 'heart'
-    }
+    },
+      {
+          title: 'Остановить регулярные пожертвования',
+          url: '/unsubscribe',
+          icon: 'sad'
+      }
   ];
 
   constructor(
