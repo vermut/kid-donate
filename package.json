@@ -7,11 +7,10 @@
     "ng": "ng",
     "start": "node server.js",
     "startDev": "ng serve",
-    "build": "ng build",
+    "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -57,5 +56,6 @@
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "heroku-run-build-script": true
 }
