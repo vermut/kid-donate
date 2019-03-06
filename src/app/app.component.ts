@@ -13,11 +13,11 @@ export class AppComponent {
       url: '/donate',
       icon: 'cafe'
     },
-    {
-      title: 'Регулярные пожертвования',
-      url: '/recurring',
-      icon: 'heart'
-    },
+      /*    {
+            title: 'Регулярные пожертвования',
+            url: '/recurring',
+            icon: 'heart'
+          },*/
       {
           title: 'Остановить регулярные пожертвования',
           url: '/unsubscribe',
