@@ -9,8 +9,8 @@ import {Platform} from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Единоразовое пожертвование',
-      url: '/onetime',
+      title: 'Сделать пожертвование',
+      url: '/donate',
       icon: 'cafe'
     },
     {
