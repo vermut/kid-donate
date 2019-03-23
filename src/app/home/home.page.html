@@ -49,7 +49,7 @@
 
     <hr>
     <h3>Prikolņaja forma vibora PODPISKI</h3>
-    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form id="donate1" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_xclick-subscriptions">
         <input type="hidden" name="business" value="donate-facilitator@kid.lv">
         <input type="hidden" name="lc" value="US">
@@ -79,6 +79,7 @@
             <tr>
                 <td><select name="srt">
                     <option value="0">Never End</option>
+                    <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -102,7 +103,8 @@
         </table>
         <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" name="submit"
                alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"
+             onclick="document.getElementById('donate1').submit();">
     </form>
 
     <!--
@@ -185,20 +187,22 @@
     <hr>
     <h3>Oficialņaja DONATE bez summi, zato s knopkoj "recurring"</h3>
 
-    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form id="donate2" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_donations"/>
         <input type="hidden" name="business" value="donate-facilitator@kid.lv"/>
         <input type="hidden" name="item_name" value="Kultura. Iecietiba. Draudziba."/>
         <input type="hidden" name="currency_code" value="EUR"/>
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
                title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"/>
-        <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"/>
+        <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"
+             onclick="document.getElementById('donate2').submit();">
+
     </form>
 
     <hr>
     <h3>Oficialņaja DONATE s summoj (fix ili select), no bez recurring</h3>
 
-    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form id="donate3" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_donations"/>
         <input type="hidden" name="business" value="donate-facilitator@kid.lv"/>
         <input type="hidden" name="item_name" value="Kultura. Iecietiba. Draudziba."/>
@@ -212,7 +216,9 @@
         <!--<input type="hidden" name="amount" value="88.9" />-->
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
                title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"/>
-        <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"/>
+        <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"
+             onclick="document.getElementById('donate3').submit();">
+
     </form>
 
 
