@@ -23,7 +23,6 @@
         время директивы фондов меняются, и нам всё сложнее получать финансирование для летнего лагеря в том виде, в
         котором мы все его знаем.
     </p>
-    <img src="../../assets/1.png"/>
 
     <p> Также у нас появилась идея открыть офис K.I.D, где мероприятия будут проходить круглый год. Идей много —
         воркшопы, клубы по интересам, киновечера, встречи с лидерами, симуляции и обучающие игры. Всё это можно
@@ -33,194 +32,20 @@
         слева «Разовое пожертвование» и следуй инструкциям!
         Для регулярной поддержки выбери сумму ежемесячного перечисления внизу страницу, укажи своё имя и нажми
         «Подписаться».</p>
-    <!--
-
-        <hr>
-        <form id="paypal1" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <INPUT TYPE="hidden" name="charset" value="utf-8"/>
-            <input type="hidden" name="cmd" value="_s-xclick"/>
-            <input type="hidden" name="hosted_button_id" value="XUATGG2LY97XW">
-            <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif" border="0"
-                   name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!"
-                   onclick="document.getElementById('paypal1').submit();"/>
-        </form>
-    -->
-
-
-    <hr>
-    <h3>Prikolņaja forma vibora PODPISKI</h3>
-    <form id="donate1" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_xclick-subscriptions">
-        <input type="hidden" name="business" value="donate-facilitator@kid.lv">
-        <input type="hidden" name="lc" value="US">
-        <input type="hidden" name="item_name" value="Donate To My Organization">
-        <input type="hidden" name="item_number" value="1234">
-        <input type="hidden" name="no_note" value="1">
-        <input type="hidden" name="no_shipping" value="2">
-        <input type="hidden" name="src" value="1">
-        <input type="hidden" name="p3" value="1">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted">
-
-        <table>
-            <tr>
-                <td>When would you like this donation to Recur</td>
-            </tr>
-            <tr>
-                <td><select name="t3">
-                    <option value="D">Daily</option>
-                    <option value="M">Monthly</option>
-                    <option value="Y">Yearly</option>
-                </select></td>
-            </tr>
-            <tr>
-                <td>How many times would you like this to recur? (including this payment)</td>
-            </tr>
-            <tr>
-                <td><select name="srt">
-                    <option value="0">Never End</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select></td>
-            </tr>
-
-            <tr>
-                <td>Enter your Donation Amount</td>
-            </tr>
-            <tr>
-                <td><input type="text" name="a3" maxlength="200"></td>
-            </tr>
-        </table>
-        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" name="submit"
-               alt="PayPal - The safer, easier way to pay online!"
-               onclick="document.getElementById('donate1').submit();">
-        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-    </form>
-
-    <!--
-
-        <hr>
-        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_donations">
-            <input type="hidden" name="business" value="donate-facilitator@kid.lv">
-            <input type="hidden" name="lc" value="RU">
-            <input type="hidden" name="item_name" value="KID Alumni (TEXT1)">
-            <input type="hidden" name="item_number" value="Donate (TEXT2)">
-            <input type="hidden" name="no_note" value="0">
-            <input type="hidden" name="currency_code" value="EUR">
-            <input type="hidden" name="bn" value="PP-DonationsBF:donateBtnPaypal.png:NonHostedGuest">
-            <input class="btn shorter diavlo book" type="submit" value="Donate monthly (&euro;)" border="0" name="submit"
-                   alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        </form>
-        <hr>
-
-
-        <div id="paypal-button-container"></div>
-
-        &lt;!&ndash;Live acc AdfPVXOEK-looxNWmSk9Uw54HsAI2HYG5RW_n4oc8VDDsrnlR0_5oDgBSRlKoJpPwHjpZgciDTDlI_1B&ndash;&gt;
-        <script src="https://www.paypal.com/sdk/js?client-id=AfdylYoLkRdSa0fZ-pNS51eIyzl_c3IeKFsaqexzZqddxK4PVdhwQC012CZCZO45g7B-EopU-BnHAtsd&currency=EUR"></script>
-        <script>
-            paypal.Buttons({
-                style: {
-                    color: 'silver',
-                    tagline: false
-                },
-                createOrder: function (data, actions) {
-                    // Set up the transaction
-                    return actions.order.create({
-                        "purchase_units": [
-                            {
-                                "amount": {
-                                    "currency_code": "EUR",
-                                    "value": "100.00"
-                                }
-                            }
-                        ]
-                    });
-                },
-                // Finalize the transaction
-                onApprove: function (data, actions) {
-                    return actions.order.capture().then(function (details) {
-                        // Show a success message to the buyer
-                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                    });
-                }
-            }).render('#paypal-button-container');
-        </script>
-
-        <hr>
-        Donate3
-
-        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top"><br />
-            <input type="hidden" name="cmd" value="_donations"><br />
-            &lt;!&ndash; Replace "business" value with your PayPal Email Address or Account ID &ndash;&gt;<br />
-            <input type="hidden" name="business" value="donate-facilitator@kid.lv"><br />
-            <input type="hidden" name="lc" value="US"><br />
-            <input type="hidden" name="item_name" value="Widget Fund"><br />
-            <input type="hidden" name="item_number" value="W-001"><br />
-            <input type="hidden" name="no_note" value="0"><br />
-            <input type="hidden" name="cn" value="Add special instructions to the seller:"><br />
-            <input type="hidden" name="no_shipping" value="2"><br />
-            <input type="hidden" name="currency_code" value="USD"><br />
-            &lt;!&ndash; &ndash;&gt;<br />
-            Please enter your donation amount: (Example - 10.00)&nbsp;&nbsp;&nbsp;&nbsp;<br />
-            <input type="text" name="amount" size="5"><br />
-            <br><br><br />
-            &lt;!&ndash; &ndash;&gt;<br />
-            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted"><br />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><br />
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"><br />
-        </form>
-    -->
-
-    <hr>
-    <h3>Oficialņaja DONATE bez summi, zato s knopkoj "recurring"</h3>
 
     <form id="donate2" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_donations"/>
         <input type="hidden" name="business" value="donate-facilitator@kid.lv"/>
         <input type="hidden" name="item_name" value="Kultura. Iecietiba. Draudziba."/>
+        <input type="hidden" name="lc" value="RU">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="cn" value="Add special instructions to the seller:">
+        <input type="hidden" name="no_shipping" value="2">
         <input type="hidden" name="currency_code" value="EUR"/>
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-               title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+        <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif" border="0"
+               name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!"
                onclick="document.getElementById('donate2').submit();">
         <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"/>
 
     </form>
-
-    <hr>
-    <h3>Oficialņaja DONATE s summoj (fix ili select), no bez recurring</h3>
-
-    <form id="donate3" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_donations"/>
-        <input type="hidden" name="business" value="donate-facilitator@kid.lv"/>
-        <input type="hidden" name="item_name" value="Kultura. Iecietiba. Draudziba."/>
-        <input type="hidden" name="currency_code" value="EUR"/>
-        <select name="amount">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20 i tak dalee</option>
-        </select>
-
-        <!--<input type="hidden" name="amount" value="88.9" />-->
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-               title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-               onclick="document.getElementById('donate3').submit();">
-
-        <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"/>
-
-    </form>
-
-
 </ion-content>
